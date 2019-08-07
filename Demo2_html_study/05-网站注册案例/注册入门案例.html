@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<!--
+		输入示例
+    	时间：2019-08-06
+    	描述：
+    -->
+	
+	<body>
+		<!--
+        	form 表单标签
+        		action ：提交的地址
+        		method ：
+        				get方式      默认提交方式，会将参数拼接在链接后面，有大小限制，4k
+        				post方式    会将参数封装在请求体中，没有大小限制
+        	
+        	input：
+        		type：指定输入项的类型
+        			text：文本
+        			password：密码值
+        			radio：单选按钮
+        			checkbox：复选框
+        			file：上传文件
+        			submit：提交按钮
+        			button：普通按钮
+        			reset：重置按钮
+        			hidden：隐藏域
+        			
+        			date：日期类型
+        			tel：手机号
+        			number：只允许数字输入
+        		placeholder：指定默认的提示信息
+        		name：在表单提交的时候，当做参数名称
+        		id：给输入项取一个名字，便于后期找到并操作
+        		
+        	textarea：文本域，可以输入一段文本
+        		rows：指定高度
+        		cols：指定宽度
+        	
+        	select：下拉列表
+        		option：选择项
+        	时间：2019-08-06
+        	描述：
+        -->
+		<form action="../04-网站首页/网站首页.html" >
+			
+			<!--
+            	隐藏域：主要是用来存放页面上的一些ID信息
+            	时间：2019-08-06
+            	描述：
+            -->
+			<input type="hidden" value="sdfasdasgasd#123dasdf" name="uid"/>
+			
+			用户名：<input type="text" name="username" id="username" placeholder="请输入用户名" /><br />
+			密码：<input type="password"  /><br />
+			确认密码：<input type="password"  /><br />
+			邮箱：<input type="text"  /><br />
+			手机号：<input type="tel"  /><br />
+			照片：<input type="file"  /><br />
+			性别：<input type="radio" name="sex"/>男
+				<input type="radio" name="sex"/>女
+				<input type="radio" name="sex"/>未知<br />
+			爱好：<input type="checkbox"  />抽烟
+				<input type="checkbox"  />喝酒
+				<input type="checkbox"  />烫头
+				<input type="checkbox"  />撸猫<br />
+			择偶标准：<textarea rows="4" cols="40"></textarea><br />
+			籍贯：
+				<select>
+					<option>--请选择--</option>
+					<option>福建</option>
+					<option>广东</option>
+				</select><br />
+			出生年月：<input type="date" /><br />
+			验证码：<input type="text"  /> <br />
+			<input type="submit" value="提交~"  />
+			<input type="button" value="普通按钮"  />
+			<input type="reset" value="重置按钮"  />
+	
+		</form>
+		
+		
+	</body>
+</html>
